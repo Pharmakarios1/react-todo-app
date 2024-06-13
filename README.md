@@ -1,4 +1,5 @@
 ## Todo app
 
-#sample picture
-![alt text](todo-app.png)
+# sample picture
+
+![todo-app](todo-app.png)
