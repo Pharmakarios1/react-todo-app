@@ -1,3 +1,4 @@
-# Todo app
+## Todo app
 
-![todo-app](src/assets/todo-app.png)
+#sample picture
+![alt text](todo-app.png)
