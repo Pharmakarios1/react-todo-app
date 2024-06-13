@@ -2,4 +2,4 @@
 
 # sample picture
 
-![todo-app](todo-app.png)
+![](todo-app.png)
