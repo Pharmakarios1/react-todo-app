@@ -1,5 +1,5 @@
 ## Todo app
 
-# sample picture
+# UI update!
 
-![](todo-app.png)
+![ui](todo-app.png)
