@@ -111,16 +111,26 @@ body{
 
 .btn{
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    gap: 1px;
 }
 
 .btn button{
-    background:#b88cdc;
+    background:transparent;
     border: none;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    display: grid;
+    place-content: center;
 
+}
+
+.faTrash{
+    color:#b88cdc;
+}
+
+.faEdit{
+    color: #b88cdc;
+    margin-right: 0;
 }

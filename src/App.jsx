@@ -16,7 +16,7 @@ const App = () => {
       <h1>React Todo List</h1>
       <Todoinput />
       <h6>`You cannot submit empty item`</h6>
-      <h4>You have {0} items on the List</h4>
+      <h4>You have {0} item(s) on the List</h4>
       <TodoList todos={todos} />
       <p>@Pharmakarios</p>
     </div>

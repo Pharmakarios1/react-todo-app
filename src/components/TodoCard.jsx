@@ -1,3 +1,4 @@
+import { FaPenSquare, FaTrash } from "react-icons/fa";
 const TodoCard = ({ children }) => {
   return (
     <li className="card-item">
@@ -7,8 +8,13 @@ const TodoCard = ({ children }) => {
       </div>
 
       <div className="btn">
-        <button>Edit</button>
-        <button className="del">Del</button>
+        <button>
+          <FaPenSquare className="faEdit" />
+        </button>
+
+        <button className="del">
+          <FaTrash className="faTrash" />
+        </button>
       </div>
     </li>
   );
