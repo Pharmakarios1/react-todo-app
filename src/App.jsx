@@ -9,11 +9,13 @@ const App = () => {
     const newTodoList = [...todos, newTodo];
     setTodos(newTodoList);
   };
-
-  const handleDelete = (todo, index) => {
-    const newTodoList = todo.filter((newIndex) => {
-      if (newIndex !== index) setTodos(newTodoList);
-    });
+  console.log(todos);
+  const handleDelete = (index) => {
+    setTodos(
+      todos.filter((todo, todoIndex) => {
+        return todoIndex !== index;
+      })
+    );
   };
 
   return (

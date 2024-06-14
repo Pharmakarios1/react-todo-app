@@ -1,12 +1,13 @@
 import TodoCard from "./TodoCard";
 
-const TodoList = ({ todos, handleDelete }) => {
+const TodoList = (props) => {
+  const { todos } = props;
   return (
     <ol className="ol">
-      {todos.map((item, index) => {
+      {todos.map((todo, index) => {
         return (
-          <TodoCard key={index} handleDelete={handleDelete}>
-            {item}
+          <TodoCard key={index} {...props} index={index}>
+            {todo}
           </TodoCard>
         );
       })}

@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Todoinput = ({ handleAddTodos }) => {
   const [todoValue, setTodoValue] = useState("");
+
   return (
     <>
       <div className="input-section">
