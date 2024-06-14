@@ -3,6 +3,7 @@ const TodoCard = ({ children, handleDelete, index, handleEdit }) => {
   return (
     <li className="card-item">
       <div className="input-text-wrapper">
+        <span className="check"></span>
         <input type="checkbox" name="checkbox" id="checkbox" />
         <h5 className="text">{children}</h5>
       </div>

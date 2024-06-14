@@ -103,9 +103,45 @@ body{
     align-items: start
 }
 
-/* .input-text-wrapper #checkbox{
-    align-items: ;
-} */
+.input-text-wrapper input[type="checkbox"]{
+ display: none;
+}
+
+.input-text-wrapper .check {
+    width: 10px;
+    height: 15px;
+    background-color: #c5bdcd;
+    border: 2px solid #b88cdc;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+  }
+
+
+  .input-text-wrapper input[type="checkbox"]:checked + .check {
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+  }
+
+  .input-text-wrapper .check:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+
+  .input-text-wrapper input[type="checkbox"]:checked + .check:after {
+    display: block;
+  }
+  .input-text-wrapper .check:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
 
 .text{
     justify-content: center;
