@@ -1,14 +1,18 @@
 import { FaPenSquare, FaTrash } from "react-icons/fa";
-const TodoCard = ({ children, handleDelete, index }) => {
+const TodoCard = ({ children, handleDelete, index, handleEdit }) => {
   return (
     <li className="card-item">
       <div className="input-text-wrapper">
-        <input type="checkbox" name="" id="checkbox" />
+        <input type="checkbox" name="checkbox" id="checkbox" />
         <h5 className="text">{children}</h5>
       </div>
 
       <div className="btn">
-        <button>
+        <button
+          onClick={() => {
+            handleEdit(index);
+          }}
+        >
           <FaPenSquare className="faEdit" />
         </button>
 

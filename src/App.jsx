@@ -4,6 +4,7 @@ import TodoList from "./components/TodoList";
 
 const App = () => {
   const [todos, setTodos] = useState([]);
+  const [todoValue, setTodoValue] = useState("");
 
   const handleAddTodos = (newTodo) => {
     const newTodoList = [...todos, newTodo];
@@ -18,16 +19,29 @@ const App = () => {
     );
   };
 
+  const handleEdit = (index) => {
+    setTodoValue(todos[index]);
+    handleDelete(index);
+  };
+
   return (
     <div className="app">
       <h1>React Todo List</h1>
 
-      <Todoinput handleAddTodos={handleAddTodos} />
+      <Todoinput
+        handleAddTodos={handleAddTodos}
+        todoValue={todoValue}
+        setTodoValue={setTodoValue}
+      />
 
       <h6>`You cannot submit empty item`</h6>
       <h4>You have {0} item(s) on the List</h4>
 
-      <TodoList todos={todos} handleDelete={handleDelete} />
+      <TodoList
+        todos={todos}
+        handleDelete={handleDelete}
+        handleEdit={handleEdit}
+      />
 
       <p>@Pharmakarios</p>
     </div>

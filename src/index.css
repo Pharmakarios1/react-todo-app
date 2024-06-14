@@ -34,7 +34,8 @@ body{
 .input-section .search{
     background-color: #b88cdc;
     width: 280px;
-    padding: 5px;
+    padding: 8px;
+    padding-left: 20px;
     border: none;
     border-bottom:3px solid #6d29a5;
     border-radius: 5px;
