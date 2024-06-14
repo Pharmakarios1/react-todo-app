@@ -12,10 +12,10 @@ body{
 }
 .app{
     position: relative;
-    max-width: 60vw;
+    max-width: 70vw;
     width: 600px;
     max-height: 40%;
-    height: 500px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     color:#6d29a5;
