@@ -13,9 +13,9 @@ body{
 .app{
     position: relative;
     max-width: 70vw;
-    width: 600px;
+    width: 450px;
     max-height: 40%;
-    height: 650px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     color:#6d29a5;
