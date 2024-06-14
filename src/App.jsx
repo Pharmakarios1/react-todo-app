@@ -1,23 +1,32 @@
+import { useState } from "react";
 import Todoinput from "./components/Todoinput";
 import TodoList from "./components/TodoList";
 
 const App = () => {
-  let todos = [
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur fugiat non in ipsa dolorum quae, ea consequuntur error ducimus nesciunt fuga temporibus, perspiciatis atque, amet sit repudiandae sapiente rem vitae.",
-    "drink Milk",
-    "rest",
-    "blessed",
-    "moses",
-    "Gift",
-    "Hello Mr Man",
-  ];
+  const [todos, setTodos] = useState([]);
+
+  const handleAddTodos = (newTodo) => {
+    const newTodoList = [...todos, newTodo];
+    setTodos(newTodoList);
+  };
+
+  const handleDelete = (todo, index) => {
+    const newTodoList = todo.filter((newIndex) => {
+      if (newIndex !== index) setTodos(newTodoList);
+    });
+  };
+
   return (
     <div className="app">
       <h1>React Todo List</h1>
-      <Todoinput />
+
+      <Todoinput handleAddTodos={handleAddTodos} />
+
       <h6>`You cannot submit empty item`</h6>
       <h4>You have {0} item(s) on the List</h4>
-      <TodoList todos={todos} />
+
+      <TodoList todos={todos} handleDelete={handleDelete} />
+
       <p>@Pharmakarios</p>
     </div>
   );

@@ -1,5 +1,5 @@
 import { FaPenSquare, FaTrash } from "react-icons/fa";
-const TodoCard = ({ children }) => {
+const TodoCard = ({ children, handleDelete, index }) => {
   return (
     <li className="card-item">
       <div className="input-text-wrapper">
@@ -12,7 +12,12 @@ const TodoCard = ({ children }) => {
           <FaPenSquare className="faEdit" />
         </button>
 
-        <button className="del">
+        <button
+          className="del"
+          onClick={() => {
+            handleDelete(index);
+          }}
+        >
           <FaTrash className="faTrash" />
         </button>
       </div>

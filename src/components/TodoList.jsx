@@ -1,10 +1,14 @@
 import TodoCard from "./TodoCard";
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, handleDelete }) => {
   return (
     <ol className="ol">
       {todos.map((item, index) => {
-        return <TodoCard key={index}>{item}</TodoCard>;
+        return (
+          <TodoCard key={index} handleDelete={handleDelete}>
+            {item}
+          </TodoCard>
+        );
       })}
     </ol>
   );

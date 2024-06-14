@@ -73,6 +73,10 @@ body{
     margin: 0 0 25px 15px;
     padding: 5px;
     overflow-y:scroll;
+    border-bottom: 2px solid #b88cdc;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+
 }
 ::-webkit-scrollbar{
     content: "";
@@ -82,7 +86,7 @@ body{
     border:1px solid #6d29a5;
     border-radius: 5px;
     padding: 5px;
-    margin: 3px 4px;
+    margin: 4px 0px;
     min-height: 30px;
     display: flex;
     justify-content: space-between;
@@ -110,8 +114,9 @@ body{
 }
 
 .btn{
-    display: flex;
-    gap: 1px;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
 }
 
 .btn button{
@@ -127,10 +132,25 @@ body{
 }
 
 .faTrash{
-    color:#b88cdc;
+     color:#6D29A5;
 }
 
 .faEdit{
     color: #b88cdc;
-    margin-right: 0;
+}
+
+
+@media (min-width:600px){
+    .input-section .search{
+        width: 280px;
+    }
+}
+
+@media (max-width: 600px){
+    .input-section .search{
+        width: 160px;
+    }
+    .card-item{
+        width: 180px;
+    }
 }
