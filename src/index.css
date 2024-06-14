@@ -178,7 +178,7 @@ body{
 }
 
 
-@media (min-width:600px){
+/* @media (min-width:600px){
     .input-section .search{
         width: 280px;
     }
@@ -191,4 +191,4 @@ body{
     .card-item{
         width: 230px;
     }
-}
+} */
