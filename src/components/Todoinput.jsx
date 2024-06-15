@@ -1,6 +1,10 @@
-import { useState } from "react";
-
-const Todoinput = ({ handleAddTodos, todoValue, setTodoValue }) => {
+const Todoinput = ({
+  handleAddTodos,
+  todoValue,
+  setTodoValue,
+  count,
+  setCount,
+}) => {
   // const [todoValue, setTodoValue] = useState("");
 
   return (
@@ -17,6 +21,7 @@ const Todoinput = ({ handleAddTodos, todoValue, setTodoValue }) => {
         <button
           onClick={() => {
             handleAddTodos(todoValue);
+            setCount(count + 1);
             setTodoValue("");
           }}
         >

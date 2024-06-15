@@ -30,6 +30,8 @@ body{
     display: flex;
     gap: 10px;
 
+    margin-bottom: 20px;
+
 }
 
 .input-section .search{
@@ -71,6 +73,10 @@ body{
 }
 .app h4{
     margin-top:15px;
+    padding: 6px 80px;
+    border-top: 2px solid #b88cdc;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .ol{
     margin: 0 0 25px 15px;
@@ -86,7 +92,7 @@ body{
     border:1px solid #6d29a5;
     border-radius: 5px;
     padding: 5px;
-    margin: 4px 0px;
+    margin: 8px 0px;
     min-height: 30px;
     display: flex;
     justify-content: space-between;
@@ -176,9 +182,17 @@ body{
 }
 
 .border-top{
+    padding-top:2px;
+    padding-left: 8px;
     border-top:3px solid #6d29a5;
-    padding-top:10px;
     border-top-left-radius: 10px;
+}
+
+.counter-var{
+    color: #b88cdc;
+}
+.user{
+    color:#d0560a;
 }
 /* @media (min-width:600px){
     .input-section .search{
@@ -199,16 +213,24 @@ body{
     border-radius: 12px;
     margin: 0 2rem;
     padding: 10px;
+    color: #b88cdc;
     box-shadow: 1px 1px 20px 1px #6d29a5 inset;
 }
 .github{
     font-size: 2rem;
+    cursor: pointer;
+    transition: .3sec ease-in-out;
+}
+.github:hover{
+    transform: scale(1.3);
 }
 .linkedin{
     font-size: 2rem;
+    cursor: pointer;
 }
 .x-twitter{
     font-size: 2rem;
+    cursor: pointer;
 }
 @media (max-width: 600px){
     .app{
