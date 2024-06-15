@@ -195,6 +195,9 @@ body{
     align-items: center;
     justify-content: center;
     gap: 6.5rem;
+    border: 1px solid #6d29a5;
+    border-radius: 12px;
+    margin: 0 4.5rem;
 }
 .github{
     font-size: 2rem;
