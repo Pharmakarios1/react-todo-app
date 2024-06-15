@@ -13,7 +13,7 @@ body{
 .app{
     position: relative;
     max-width: 70vw;
-    width: 450px;
+    width: 500px;
     max-height: 40%;
     height: 550px;
     display: flex;
@@ -180,13 +180,16 @@ body{
     padding-top:10px;
     border-top-left-radius: 10px;
 }
-@media (min-width:600px){
+/* @media (min-width:600px){
     .input-section .search{
         width: 280px;
     }
-}
+} */
 
 @media (max-width: 600px){
+    .app{
+        margin-top: 30px;
+    }
     .input-section .search{
         width: 160px;
     }
