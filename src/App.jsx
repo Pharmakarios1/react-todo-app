@@ -61,7 +61,7 @@ const App = () => {
         handleEdit={handleEdit}
       />
 
-      <p>@Pharmakarios</p>
+      <p className="border-top">@Pharmakarios</p>
     </div>
   );
 };

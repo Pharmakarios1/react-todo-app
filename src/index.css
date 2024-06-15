@@ -76,11 +76,8 @@ body{
     margin: 0 0 25px 15px;
     padding: 5px;
     overflow-y:scroll;
-    border-bottom: 1px solid #b88cdc;
-    border-bottom-right-radius: 20px ;
-    border-bottom-left-radius: 20px ;
-
 }
+
 ::-webkit-scrollbar{
     content: "";
     overflow-y: hidden;
@@ -178,7 +175,11 @@ body{
     color: #b88cdc;
 }
 
-
+.border-top{
+    border-top:3px solid #6d29a5;
+    padding-top:10px;
+    border-top-left-radius: 10px;
+}
 @media (min-width:600px){
     .input-section .search{
         width: 280px;
