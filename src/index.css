@@ -186,6 +186,25 @@ body{
     }
 } */
 
+.menu{
+    margin-top: 40px;
+    color: white;
+}
+.menu-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.5rem;
+}
+.github{
+    font-size: 2rem;
+}
+.linkedin{
+    font-size: 2rem;
+}
+.x-twitter{
+    font-size: 2rem;
+}
 @media (max-width: 600px){
     .app{
         margin-top: 30px;
